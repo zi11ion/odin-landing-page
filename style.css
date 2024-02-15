@@ -42,6 +42,8 @@ header {
 /* Hero Section  */
 .hero {
     background-color: #1F2937;
+    display: flex;
+    flex-direction: row;
 }
 
 .hero h1 {
@@ -65,9 +67,20 @@ button {
     padding: 8px 24px;
 }
 
+.hero-left {
+    padding: 2em;
+}
+
+.hero-right {
+    padding: 2em;
+    display: flex;
+    flex-grow: 0;
+}
+
 /* Info section */
 .info {
     display: flex;
+    margin: 3em 0;
 }
 
 card img {
@@ -99,17 +112,24 @@ cite {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    
 }
 
 /* CTA section */
 .cta {
     background-color:#3882F6;
     border-radius: 8px; 
-    color:#F9FAF8
+    color:#F9FAF8;
+    margin: 3em 2em;
 }
 
 .cta button {
     border: 2px solid #F9FAF8;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Footer */
