@@ -3,6 +3,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
 section {
     padding: 1em 2em;
 }
@@ -79,13 +84,7 @@ button {
 
 /* Info section */
 .info {
-    display: flex;
     margin: 3em 0;
-}
-
-card img {
-    border: 3px solid #3882F6;
-    border-radius: 8px;
 }
 
 .info h2{
@@ -95,10 +94,30 @@ card img {
     text-align: center;
 }
 
+.info-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.info-item {
+    max-width: 200px;
+    margin: 2em;
+}
+
+card img {
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+   
+}
+
 
 /* Quote section */
 .quote {
     background-color: #E5E7EB;
+    padding: 5em;
 }
 
 blockquote {
@@ -124,12 +143,16 @@ cite {
     border-radius: 8px; 
     color:#F9FAF8;
     margin: 3em 2em;
+    display: flex;
+   justify-content: space-around;
 }
+
+
 
 .cta button {
     border: 2px solid #F9FAF8;
     display: flex;
-    justify-content: flex-end;
+    align-self: center;
 }
 
 /* Footer */
